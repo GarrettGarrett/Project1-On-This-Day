@@ -3,6 +3,10 @@ let date = "5/21"
 let eventList = []
 let deathsList = [] 
 let birthsList = []
+let slider = document.querySelector(".slider");
+let leftArrow = document.querySelector(".left");
+let rightArrow = document.querySelector(".right");
+let sectionIndex = 0;
 
 /*----- app's state (variables) -----*/
 let apiInfo;
@@ -35,9 +39,35 @@ function render() {
 }; 
 
 
+function moveLeftListener(leftArrow) {
+        leftArrow.addEventListener('click', function () {
+                if (sectionIndex <= 0) {
+                sectionIndex === 0
+                return
+                } else {
+                sectionIndex--
+                slider.style.transform = 'translate(' + (sectionIndex) * -25 +'%)';
+                }                     
+        });
+}
+
+function moveRightListener(rightArrow) {
+        rightArrow.addEventListener('click', function () {
+                if (sectionIndex >= (slider.childElementCount - 1)) {
+                  sectionIndex === slider.childElementCount
+                  return
+                } else {
+                  sectionIndex++
+                  slider.style.transform = 'translate(' + (sectionIndex) * -25 +'%)';
+                }                     
+            });
+}
+
+
+
+
 getApiData();
-console.log('events', eventList)
-console.log('births', birthsList)
-console.log('deaths', deathsList)
+moveLeftListener(leftArrow)
+moveRightListener(rightArrow)
 
 
