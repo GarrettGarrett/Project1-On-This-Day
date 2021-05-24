@@ -4,6 +4,13 @@ header {
     align-items: center;
 }
 
+.todaysDate {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
 footer {
     display: flex;
     justify-content: center; 
@@ -14,47 +21,5 @@ footer {
 h1 {
     color: black;
 }
-.container {
-  max-width: 300px; 
-  margin: 50px auto;
-  
-}
 
-.carousel {
-  border: 2px solid #ccc;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: left; 
-  
-}
 
-.slider {
-  height: 100%;
-  display: flex;
-  width: 400%;
-  transition: all 0.3s;
-  
-}
-
-.slider section {
-  flex-basis: 100%;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  padding: 100px;
-}
-.controls .arrow {
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-}
-
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}

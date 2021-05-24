@@ -1,34 +1,48 @@
 /*----- constants -----*/
-let date = "5/21"
+let apiInfo;
 let eventList = []
 let deathsList = [] 
 let birthsList = []
-let slider = document.querySelector(".slider");
-let leftArrow = document.querySelector(".left");
-let rightArrow = document.querySelector(".right");
-let sectionIndex = 0;
+let listIndex = 0
+var options = { year: 'numeric', month: 'long', day: 'numeric' };
+let today  = new Date();
+let dateToday = today.toLocaleDateString("en-US", options)
+let dd = String(today.getDate()).padStart(2, '0');
+let mm = String(today.getMonth() + 1).padStart(2, '0'); 
+let apiDate = mm + '/' + dd
+
+
 
 /*----- app's state (variables) -----*/
-let apiInfo;
+
+
+
 
 /*----- cached element references -----*/
+let leftArrow = document.getElementById('left')
+let rightArrow = document.getElementById("right");
+
+
 
 /*----- event listeners -----*/
+$( ".todaysDate" ).html(dateToday)
+leftArrow.addEventListener("click", shiftLeft);
+rightArrow.addEventListener("click", shiftRight);
+
+
 
 /*----- functions -----*/
 function getApiData () {
-        $.ajax(`http://history.muffinlabs.com/date/${date}`)
+        $.ajax(`http://history.muffinlabs.com/date/${apiDate}`)
     .then(function(data) { 
         apiInfo = data;
         render();
+        
         });
 }
 
 
 function render() {
-        eventList.length = 0 //clear the evenList
-        deathsList.length = 0 //clear the deathsList
-        birthsList.length = 0 //clear the birthsList
         for (let i = 0; i < apiInfo.data.Events.length; i++) {
                 eventList.push(apiInfo.data.Events[i].html)
 
@@ -36,38 +50,40 @@ function render() {
 
                 birthsList.push(apiInfo.data.Births[i].html)
               }
+        
+        $( ".events" ).html(eventList[listIndex]); 
+        $( ".deaths" ).html(deathsList[listIndex]);   
+               
 }; 
 
 
-function moveLeftListener(leftArrow) {
-        leftArrow.addEventListener('click', function () {
-                if (sectionIndex <= 0) {
-                sectionIndex === 0
+function shiftRight () {
+        if (listIndex === eventList.length) {
                 return
-                } else {
-                sectionIndex--
-                slider.style.transform = 'translate(' + (sectionIndex) * -25 +'%)';
-                }                     
-        });
+        }
+        listIndex ++
+        $( ".events" ).html(eventList[listIndex]); 
+        $( ".deaths" ).html(deathsList[listIndex]);   
+        $( ".births" ).html(birthsList[listIndex])
+        
 }
 
-function moveRightListener(rightArrow) {
-        rightArrow.addEventListener('click', function () {
-                if (sectionIndex >= (slider.childElementCount - 1)) {
-                  sectionIndex === slider.childElementCount
-                  return
-                } else {
-                  sectionIndex++
-                  slider.style.transform = 'translate(' + (sectionIndex) * -25 +'%)';
-                }                     
-            });
+function shiftLeft () {
+        if (listIndex === 0) {
+                return
+        }
+        listIndex --
+        $( ".events" ).html(eventList[listIndex]); 
+        $( ".deaths" ).html(deathsList[listIndex]);   
+        $( ".births" ).html(birthsList[listIndex])
+        
 }
 
 
 
 
 getApiData();
-moveLeftListener(leftArrow)
-moveRightListener(rightArrow)
+
+
 
 
