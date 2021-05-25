@@ -53,7 +53,9 @@ function render() {
         
         $( ".events" ).html(eventList[listIndex]); 
         $( ".deaths" ).html(deathsList[listIndex]);   
-        $( ".births" ).html(birthsList[listIndex]); 
+        $( ".births" ).html(birthsList[listIndex]);
+        hideShowArrow();
+        
                
 }; 
 
@@ -66,6 +68,7 @@ function shiftRight () {
         $( ".events" ).html(eventList[listIndex]); 
         $( ".deaths" ).html(deathsList[listIndex]);   
         $( ".births" ).html(birthsList[listIndex])
+        hideShowArrow();
         
 }
 
@@ -77,10 +80,21 @@ function shiftLeft () {
         $( ".events" ).html(eventList[listIndex]); 
         $( ".deaths" ).html(deathsList[listIndex]);   
         $( ".births" ).html(birthsList[listIndex])
+        hideShowArrow();
         
 }
 
-
+function hideShowArrow () {
+        if (listIndex === 0) {
+        leftArrow.style.display = "none"
+        } else if (listIndex === eventList.length) {
+                rightArrow.style.display = "none"
+        } else {
+                leftArrow.style.display = "block"
+                rightArrow.style.display = "block"
+        }
+        console.log(listIndex)
+};
 
 
 getApiData();
