@@ -14,6 +14,9 @@ let dateToday = today.toLocaleDateString("en-US", options)
 let dd = String(today.getDate()).padStart(2, '0');
 let mm = String(today.getMonth() + 1).padStart(2, '0'); 
 let apiDate = mm + '/' + dd
+let currentlyVeiwingDateAbbrev;
+let currentlyVeiwingDate = today;
+let currentlyVeiwingDateAPIVersion;
 
 
 
@@ -25,6 +28,8 @@ let apiDate = mm + '/' + dd
 /*----- cached element references -----*/
 let leftArrow = document.getElementById('left')
 let rightArrow = document.getElementById("right");
+let dateLeftArrow = document.getElementById('dateLeft')
+let dateRightArrow = document.getElementById('dateRight')
 
 
 
@@ -32,12 +37,16 @@ let rightArrow = document.getElementById("right");
 $(".todaysDate").html(dateToday)
 leftArrow.addEventListener("click", shiftLeft);
 rightArrow.addEventListener("click", shiftRight);
+dateLeftArrow.addEventListener("click", prevDay);
+dateRightArrow.addEventListener("click", nextDay);
+
+
 
 
 
 /*----- functions -----*/
-function getApiData () {
-        $.ajax(`https://history.muffinlabs.com/date/${apiDate}`)
+function getApiData (param) {
+        $.ajax(`https://history.muffinlabs.com/date/${param}`)
     .then(function(data) { 
         apiInfo = data;
         render();
@@ -47,7 +56,13 @@ function getApiData () {
 
 
 function render() {
+        eventList.length = 0
+        deathsList.length = 0
+        birthsList.length = 0
         for (let i = 0; i < apiInfo.data.Events.length; i++) {
+
+                
+                
                 eventList.push(apiInfo.data.Events[i].html)
 
                 deathsList.push(apiInfo.data.Deaths[i].html)
@@ -113,7 +128,42 @@ function hideShowArrow () {
 };
 
 
-getApiData();
+function nextDay () {
+        currentlyVeiwingDate.setDate(currentlyVeiwingDate.getDate() + 1); // add 1 day
+        
+        let dateToday = currentlyVeiwingDate.toLocaleDateString("en-US", options) // format to mm/dd
+        let dd = String(currentlyVeiwingDate.getDate()).padStart(2, '0');
+        let mm = String(currentlyVeiwingDate.getMonth() + 1).padStart(2, '0'); 
+        let currentlyVeiwingDateAPIVersion = mm + '/' + dd
+        let currentlyVeiwingDateHTMLVersion = currentlyVeiwingDate.toLocaleDateString("en-US", options) // Month, Day, Year
+        $(".todaysDate").html(currentlyVeiwingDateHTMLVersion)
+
+        getApiData(currentlyVeiwingDateAPIVersion);
+        console.log(currentlyVeiwingDateAPIVersion)
+         
+}
+
+
+function prevDay () {
+        currentlyVeiwingDate.setDate(currentlyVeiwingDate.getDate() - 1); // add 1 day
+        
+        let dateToday = currentlyVeiwingDate.toLocaleDateString("en-US", options) // format to mm/dd
+        let dd = String(currentlyVeiwingDate.getDate()).padStart(2, '0');
+        let mm = String(currentlyVeiwingDate.getMonth() + 1).padStart(2, '0'); 
+        let currentlyVeiwingDateAPIVersion = mm + '/' + dd
+        let currentlyVeiwingDateHTMLVersion = currentlyVeiwingDate.toLocaleDateString("en-US", options) // Month, Day, Year
+        $(".todaysDate").html(currentlyVeiwingDateHTMLVersion)
+
+        getApiData(currentlyVeiwingDateAPIVersion);
+        console.log(currentlyVeiwingDateAPIVersion)
+         
+}
+
+
+
+getApiData(apiDate);
+
+
 
 
 
