@@ -1,8 +1,12 @@
 /*----- constants -----*/
 let apiInfo;
+let imgData;
 let eventList = []
 let deathsList = [] 
 let birthsList = []
+let imgList = []
+let deathImgNameList = []
+let deathsImgList = []
 let listIndex = 0
 var options = { year: 'numeric', month: 'long', day: 'numeric' };
 let today  = new Date();
@@ -25,7 +29,7 @@ let rightArrow = document.getElementById("right");
 
 
 /*----- event listeners -----*/
-$( ".todaysDate" ).html(dateToday)
+$(".todaysDate").html(dateToday)
 leftArrow.addEventListener("click", shiftLeft);
 rightArrow.addEventListener("click", shiftRight);
 
@@ -33,7 +37,7 @@ rightArrow.addEventListener("click", shiftRight);
 
 /*----- functions -----*/
 function getApiData () {
-        $.ajax(`http://history.muffinlabs.com/date/${apiDate}`)
+        $.ajax(`https://history.muffinlabs.com/date/${apiDate}`)
     .then(function(data) { 
         apiInfo = data;
         render();
@@ -49,12 +53,24 @@ function render() {
                 deathsList.push(apiInfo.data.Deaths[i].html)
 
                 birthsList.push(apiInfo.data.Births[i].html)
+
+                 
+                // let wikiLink = apiInfo.data.Deaths[i].links[0].link
+                // let tempIndex = wikiLink.indexOf("wiki/");
+                // let wikiName = wikiLink.substr(tempIndex + 5);
+                // deathImgNameList.push(wikiName)
+                
+                // // console.log(deathImgNameList) //returns the name needed for next api call to get image from Wikipedia.
               }
         
         $( ".events" ).html(eventList[listIndex]); 
         $( ".deaths" ).html(deathsList[listIndex]);   
         $( ".births" ).html(birthsList[listIndex]);
         hideShowArrow();
+        
+        // deathImgNameList.forEach(name => getImg(name));
+        
+        
         
                
 }; 
@@ -86,18 +102,35 @@ function shiftLeft () {
 
 function hideShowArrow () {
         if (listIndex === 0) {
-        leftArrow.style.display = "none"
+        leftArrow.style.visibility = "hidden"
         } else if (listIndex === eventList.length) {
-                rightArrow.style.display = "none"
+                rightArrow.style.visibility = "hidden"
         } else {
-                leftArrow.style.display = "block"
-                rightArrow.style.display = "block"
+                leftArrow.style.visibility = "visible"
+                rightArrow.style.visibility = "visible"
         }
-        console.log(listIndex)
+        
 };
 
 
 getApiData();
+
+
+
+
+// function getImg (name) {
+//         $.ajax(`https://en.wikipedia.org/w/api.php?action=query&titles=${name}&prop=pageimages&format=json&pithumbsize=500`)
+//         .then(function(data) { 
+//              imgData = data;
+//             renderImg();
+            
+//             });
+//     }
+
+
+// function renderImg() {
+//         console.log(imgData)
+// }
 
 
 

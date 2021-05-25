@@ -1,15 +1,33 @@
-main {
+.eventsMain {
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-height: 300px;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 20px;
     
     
 }
 
+.dateMain {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 300px;
+    padding-top: 20px;
+}
+
+
+.todaysDate {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    
+
+}
 .content {
 
 }
@@ -18,14 +36,16 @@ main {
 .events {
     padding: 7px;
     
-
 }
+
 .deaths {
     padding: 7px;
 }
+
 .births {
     padding: 7px;
 }
+
 
 #navBoxleft {
 
@@ -78,4 +98,18 @@ h1 {
     margin-left: 20px;
     cursor: pointer;
 }
+
+#dateLeft { 
+    margin-right: 20px;
+    cursor: pointer;
+    
+    
+    
+}
+
+#dateRight {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
 

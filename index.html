@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">  
 <head>
     <script src="https://kit.fontawesome.com/f9d370b433.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="./js/script.js"></script>
+    
 
-   
+
     <title></title>
 
 </head>
@@ -20,25 +21,37 @@
 
     <header>
         <h1>This Day in History</h1>
-        
-        
     </header>
-    <h2 class='todaysDate'></h2>
+
+    <div class="dateMain">
+        <div id='dateNavBoxLeft'>
+        <button id='dateLeft' type="button"><span class='date arrow left'><i class="fas fa-chevron-left"></i></span></button>
+        </div>  
+
+        <h2 class='todaysDate'></h2>
+
+        <div id='dateNavBoxright'>
+        <button id='dateRight' type="button"><span class='date arrow right'><i class="fas fa-chevron-right"></i></span></button>
+        </div>   
+ 
+    </div>
 
 
-    <main>
+
+
+    <main class='eventsMain'>
         <div id='navBoxleft'>
             <button id='left' type="button"><span class='arrow left'><i class="fas fa-chevron-left"></i></span></button>
         </div>
         <div class='content'>
             <h3>Events: </h3>
-            <div class="events"></div>
+            <div class="events" id='p1'></div>
 
             <h3>Deaths: </h3>
-            <div class="deaths"></div>
+            <div class="deaths" id='p2'></div>
 
             <h3>Births: </h3>
-            <div class="births"></div>
+            <div class="births" id='p3'></div>
         </div>      
 
 
