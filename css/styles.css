@@ -1,7 +1,48 @@
+main {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    
+}
+
+.content {
+    
+
+    
+}
+
+
+.events {
+    padding: 7px;
+    
+
+}
+.deaths {
+    padding: 7px;
+}
+.births {
+    padding: 7px;
+}
+
+#navBoxleft {
+
+    
+    
+}
+
+#navBoxright {
+
+    
+}
+
+
 header {
     display: flex;
     justify-content: center; 
     align-items: center;
+    
 }
 
 .todaysDate {
@@ -22,4 +63,12 @@ h1 {
     color: black;
 }
 
+#left { 
+    margin-right: 20px;
+}
+
+
+#right {
+    margin-left: 20px;
+}
 

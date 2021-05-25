@@ -53,6 +53,7 @@ function render() {
         
         $( ".events" ).html(eventList[listIndex]); 
         $( ".deaths" ).html(deathsList[listIndex]);   
+        $( ".births" ).html(birthsList[listIndex]); 
                
 }; 
 

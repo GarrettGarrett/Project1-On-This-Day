@@ -19,24 +19,34 @@
 <body>
 
     <header>
-        <h1>On This Day</h1>
+        <h1>This Day in History</h1>
         
         
     </header>
     <h2 class='todaysDate'></h2>
+
+
     <main>
-        <h3>Events: </h3>
-        <div class="events"></div>
+        <div id='navBoxleft'>
+            <button id='left' type="button"><span class='arrow left'><i class="fas fa-chevron-left"></i></span></button>
+        </div>
+        <div class='content'>
+            <h3>Events: </h3>
+            <div class="events"></div>
 
-        <h3>Deaths: </h3>
-        <div class="deaths"></div>
+            <h3>Deaths: </h3>
+            <div class="deaths"></div>
 
-        <h3>Births: </h3>
-        <div class="births"></div>      
+            <h3>Births: </h3>
+            <div class="births"></div>
+        </div>      
 
-        <button id='left' type="button">Previous</button>
-        <button id='right' type="button">Next</button>
-        
+
+
+        <div id='navBoxright'></div>
+        <button id='right' type="button"><span class='arrow right'><i class="fas fa-chevron-right"></i></span></button>
+        </div>
+
 
     </main>
 
