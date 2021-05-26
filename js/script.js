@@ -264,7 +264,7 @@ function prevDay () {
 
 
 getApiData(apiDate);
-$(".copyright").html(`Copyright &copy; All Rights Reserved ${currentYear} Project#1`)
+$("#copyright").html(`Copyright &copy; All Rights Reserved ${currentYear} Project#1`)
 
 
 
