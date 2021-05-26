@@ -17,8 +17,8 @@ let apiDate = mm + '/' + dd
 let currentlyVeiwingDateAbbrev;
 let currentlyVeiwingDate = today;
 let currentlyVeiwingDateAPIVersion;
-// let category = "History"
-let category = "GA"
+let siteCategory = "History"
+// let siteCategory = "GA"
 let topicList = []
 let taskList = []
 
@@ -37,6 +37,8 @@ let dateRightArrow = document.getElementById('dateRight')
 
 
 
+
+
 /*----- event listeners -----*/
 $(".todaysDate").html(dateToday)
 leftArrow.addEventListener("click", shiftLeft);
@@ -48,16 +50,21 @@ dateRightArrow.addEventListener("click", nextDay);
 
 
 
-/*----- functions -----*/
+
+
+
+/*----- functionns -----*/
 function getApiData (param) {
-        if (category === "History") {
+        if (siteCategory === "History") {
+                rightArrow.style.visibility = "visible"
+
                 $.ajax(`https://history.muffinlabs.com/date/${param}`)
                 .then(function(data) { 
                     apiInfo = data;
                     render();
                     
                     });
-        } else if (category === "GA") {
+        } else if (siteCategory === "GA") {
                 leftArrow.style.visibility = "hidden" //hide nav arrows
                 rightArrow.style.visibility = "hidden"
                 $( ".eventsTitle" ).html(""); // clear 
@@ -105,6 +112,19 @@ function getApiData (param) {
 
 }
 
+$("#toggle").click(function(){   
+        if (siteCategory === "History")  {
+                $(".toggle").html('<img id="theImg" src="https://seir-everest.netlify.app/static/ga-logo-f6360a973f47b2a95db240ab4798c234.svg" width="70" height="70" />'); 
+                siteCategory = "GA"
+                getApiData(apiDate);
+                
+        } else {
+                $(".toggle").html("History"); 
+                siteCategory = "History"
+                getApiData(apiDate);
+        }    
+});
+ 
 
 function render() {
         eventList.length = 0
@@ -207,7 +227,7 @@ function prevDay () {
         let dd = String(currentlyVeiwingDate.getDate()).padStart(2, '0');
         let mm = String(currentlyVeiwingDate.getMonth() + 1).padStart(2, '0'); 
         let currentlyVeiwingDateAPIVersion = mm + '/' + dd
-        let currentlyVeiwingDateHTMLVersion = currentlyVeiwingDate.toLocaleDateString("en-US", options) // Month, Day, Year
+        let currentlyVeiwingDateHTMLVersion = currentlyVeiwingDate.toLocaleDateString("en-US", options) // Format: Month, Day, Year
         $(".todaysDate").html(currentlyVeiwingDateHTMLVersion)
 
         getApiData(currentlyVeiwingDateAPIVersion);
