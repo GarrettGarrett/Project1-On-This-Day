@@ -10,6 +10,7 @@ let deathsImgList = []
 let listIndex = 0
 var options = { year: 'numeric', month: 'long', day: 'numeric' };
 let today  = new Date();
+let currentYear = new Date().getFullYear()
 let dateToday = today.toLocaleDateString("en-US", options)
 let dd = String(today.getDate()).padStart(2, '0');
 let mm = String(today.getMonth() + 1).padStart(2, '0'); 
@@ -243,7 +244,7 @@ function prevDay () {
 
 
 getApiData(apiDate);
-
+$(".copyright").html(`Copyright &copy; All Rights Reserved ${currentYear} Project#1`)
 
 
 
