@@ -54,6 +54,7 @@ dateRightArrow.addEventListener("click", nextDay);
 
 
 /*----- functionns -----*/
+
 function getApiData (param) {
         if (siteCategory === "History") {
                 rightArrow.style.visibility = "visible"
@@ -112,7 +113,8 @@ function getApiData (param) {
 
 }
 
-$("#toggle").click(function(){   
+$("#toggle").click(function(){  
+        
         if (siteCategory === "History")  {
                 $(".toggle").html('<img id="theImg" src="https://seir-everest.netlify.app/static/ga-logo-f6360a973f47b2a95db240ab4798c234.svg" width="70" height="70" />'); 
                 siteCategory = "GA"
@@ -124,9 +126,12 @@ $("#toggle").click(function(){
                 getApiData(apiDate);
         }    
 });
+
+
  
 
 function render() {
+        listIndex = 0
         eventList.length = 0
         deathsList.length = 0
         birthsList.length = 0

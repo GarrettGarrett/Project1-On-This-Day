@@ -5,44 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗓</text></svg>">
+
 
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="./js/script.js"></script>
     
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title></title>
 
 </head>
 
 <body>
-
+    <div class="container">
     <header>
-        <h1>This Day in</h1>
+        <h1 class='page-header'>This Day in</h1>
         <h1 class='toggle' id='toggle'> History</h1>
     </header>
+    
 
     <div class="dateMain">
         <div id='dateNavBoxLeft'>
-        <button id='dateLeft' type="button"><span class='date arrow left'><i class="fas fa-chevron-left"></i></span></button>
+        <button id='dateLeft' type="button" class="btn btn-light"><span class='date arrow left'><i class="fas fa-chevron-left"></i></span></button>
         </div>  
 
         <h2 class='todaysDate'></h2>
 
         <div id='dateNavBoxright'>
-        <button id='dateRight' type="button"><span class='date arrow right'><i class="fas fa-chevron-right"></i></span></button>
+        <button id='dateRight' type="button" class="btn btn-light"><span class='date arrow right'><i class="fas fa-chevron-right"></i></span></button>
         </div>   
  
     </div>
 
-
+<hr>
 
 
     <main class='eventsMain'>
         <div id='navBoxleft'>
-            <button id='left' type="button"><span class='arrow left'><i class="fas fa-chevron-left"></i></span></button>
+            <button id='left' type="button" class="btn btn-secondary"><span class='arrow left'><i class="fas fa-chevron-left"></i></span></button>
         </div>
         <div class='content'>
             <h3 class='eventsTitle'>Events: </h3>
@@ -58,7 +60,7 @@
 
 
         <div id='navBoxright'></div>
-        <button id='right' type="button"><span class='arrow right'><i class="fas fa-chevron-right"></i></span></button>
+        <button id='right' type="button" class="btn btn-secondary"><span class='arrow right'><i class="fas fa-chevron-right"></i></span></button>
         </div>
 
 
@@ -67,7 +69,8 @@
     <footer>
         <p>Copyright &copy; All Rights Reserved 2021 Project#1</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</div>
 </body>
 
 </html>
