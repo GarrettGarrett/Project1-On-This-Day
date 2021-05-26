@@ -121,3 +121,38 @@ h1 {
 #toggle {
     cursor: pointer;
 }
+
+#dateToggle {
+    cursor: pointer;
+}
+
+#dateDiv {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: rgba(1, 1, 1, 0.7);
+  }
+  #dateDiv h2 {
+    font-weight: bold;
+    font-size: 50px;
+    transition: all 500ms;
+  }
+  #dateDiv h2:hover {
+    font-size: 44px;
+    font-size-adjust: 10px;
+  }
+
+
+  #histryDiv {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: rgba(1, 1, 1, 0.7);
+  }
+  #histryDiv .toggle {
+    /* font-weight: bold; */
+    /* font-size: 50px; */
+    transition: all 500ms;
+  }
+  #histryDiv .toggle:hover {
+    font-size: 44px;
+    font-size-adjust: 10px;
+  }

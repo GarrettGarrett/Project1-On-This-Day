@@ -19,8 +19,8 @@
 </head>
 
 <body>
-    <div class="container">
-    <header >
+    <div class="container" >
+    <header id='histryDiv'>
         <h1 class='page-header'>This Day in</h1>
         <h1 class='toggle' id='toggle'> History</h1>
     </header>
@@ -31,7 +31,9 @@
         <button id='dateLeft' type="button" class="btn btn-secondary btn-grad-date"><span class='date arrow left'><i class="fas fa-chevron-left"></i></span></button>
         </div>  
 
-        <h2 class='todaysDate'></h2>
+        <div id='dateDiv'>
+            <h2 id='dateToggle' class='todaysDate'></h2>
+        </div>
 
         <div id='dateNavBoxright'>
         <button id='dateRight' type="button" class="btn btn-secondary btn-grad-date"><span class='date arrow right'><i class="fas fa-chevron-right"></i></span></button>
@@ -73,7 +75,7 @@
 
               <div class="card w-responsive text-center mx-auto p-3 mt-2 shadow-lg p-3 mb-5 bg-white rounded" id='birthsCard'>
                 <div class="card-body">
-                  <h5 class='birthsTitle'>/h5>
+                  <h5 class='birthsTitle'></h5>
                   <p class="births"></p>
                 </div>
               </div>

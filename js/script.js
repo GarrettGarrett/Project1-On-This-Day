@@ -61,7 +61,7 @@ function getApiData (param) {
         if (siteCategory === "History") {
                 $( "#dateLeft" ).removeClass("btn-danger") // change arrows to red
                 $( "#dateLeft" ).addClass("btn-secondary")
-                $( "#dateRight" ).removeClass("btn-danger") // change arrows to red
+                $( "#dateRight" ).removeClass("btn-danger") 
                 $( "#dateRight" ).addClass("btn-secondary")
 
 
@@ -161,6 +161,15 @@ $("#toggle").click(function(){
 });
 
 
+$("#dateToggle").click(function(){  
+        $(".todaysDate").html(dateToday)
+        currentlyVeiwingDate = new Date();
+        getApiData(apiDate);
+        
+
+});
+
+
  
 
 function render() {
@@ -195,6 +204,8 @@ function render() {
         $( ".deaths" ).html(deathsList[listIndex]);   
         $( ".births" ).html(birthsList[listIndex]);
         hideShowArrow();
+
+        
         
         // deathImgNameList.forEach(name => getImg(name));
         
@@ -242,12 +253,13 @@ function hideShowArrow () {
 
 
 function nextDay () {
+        console.log(currentlyVeiwingDate)
         currentlyVeiwingDate.setDate(currentlyVeiwingDate.getDate() + 1); // add 1 day
         
         let dateToday = currentlyVeiwingDate.toLocaleDateString("en-US", options) // format to mm/dd
         let dd = String(currentlyVeiwingDate.getDate()).padStart(2, '0');
         let mm = String(currentlyVeiwingDate.getMonth() + 1).padStart(2, '0'); 
-        let currentlyVeiwingDateAPIVersion = mm + '/' + dd
+        let currentlyVeiwingDateAPIVersion = mm + '/' + dd // mm/dd
         let currentlyVeiwingDateHTMLVersion = currentlyVeiwingDate.toLocaleDateString("en-US", options) // Month, Day, Year
         $(".todaysDate").html(currentlyVeiwingDateHTMLVersion)
 
