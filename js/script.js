@@ -57,9 +57,15 @@ dateRightArrow.addEventListener("click", nextDay);
 
 
 /*----- functionns -----*/
-
 function getApiData (param) {
         if (siteCategory === "History") {
+                $( "#dateLeft" ).removeClass("btn-danger") // change arrows to red
+                $( "#dateLeft" ).addClass("btn-secondary")
+                $( "#dateRight" ).removeClass("btn-danger") // change arrows to red
+                $( "#dateRight" ).addClass("btn-secondary")
+
+
+
                 eventsCard.style.visibility = "visible"
                 birthsCard.style.visibility = "visible"
                 deathsCard.style.visibility = "visible"
@@ -78,6 +84,12 @@ function getApiData (param) {
                 eventsCard.style.visibility = "hidden"
                 birthsCard.style.visibility = "hidden"
                 deathsCard.style.visibility = "hidden"
+
+                
+                $( "#dateLeft" ).removeClass("btn-secondary") // change arrows to red
+                $( "#dateLeft" ).addClass("btn-danger")
+                $( "#dateRight" ).removeClass("btn-secondary") // change arrows to red
+                $( "#dateRight" ).addClass("btn-danger")
                 
 
                 $( ".eventsTitle" ).html(""); // clear 

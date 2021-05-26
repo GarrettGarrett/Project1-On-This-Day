@@ -32,6 +32,7 @@
 }
 .content {
  margin-top: auto;
+ /* margin-block: auto; */
 }
 
 
