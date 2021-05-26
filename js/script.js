@@ -35,7 +35,9 @@ let leftArrow = document.getElementById('left')
 let rightArrow = document.getElementById("right");
 let dateLeftArrow = document.getElementById('dateLeft')
 let dateRightArrow = document.getElementById('dateRight')
-
+let eventCard = document.getElementById('eventsCard')
+let deathsCard = document.getElementById('deathsCard')
+let birthsCard = document.getElementById('birthsCard')
 
 
 
@@ -58,6 +60,9 @@ dateRightArrow.addEventListener("click", nextDay);
 
 function getApiData (param) {
         if (siteCategory === "History") {
+                eventsCard.style.visibility = "visible"
+                birthsCard.style.visibility = "visible"
+                deathsCard.style.visibility = "visible"
                 rightArrow.style.visibility = "visible"
 
                 $.ajax(`https://history.muffinlabs.com/date/${param}`)
@@ -69,6 +74,12 @@ function getApiData (param) {
         } else if (siteCategory === "GA") {
                 leftArrow.style.visibility = "hidden" //hide nav arrows
                 rightArrow.style.visibility = "hidden"
+
+                eventsCard.style.visibility = "hidden"
+                birthsCard.style.visibility = "hidden"
+                deathsCard.style.visibility = "hidden"
+                
+
                 $( ".eventsTitle" ).html(""); // clear 
                 $( ".events" ).html("");  // clear 
 
@@ -78,7 +89,6 @@ function getApiData (param) {
                 $( ".birthsTitle" ).html(""); // clear 
                 $( ".births" ).html("");// clear 
 
-                
                 
                 topicList.length = 0 
                 taskList.length = 0
@@ -99,15 +109,25 @@ function getApiData (param) {
                         let taskListSeperated = tasksStr.split(', '); //convert str comma seperated into an array
                         
                         
-
+                        eventsCard.style.visibility = "visible"
                         $( ".eventsTitle" ).html(topicList); // update topic
 
-                        if ((taskListSeperated.length) > 1) { //dont place bullet ponts if nothing to display
+                        if ((taskListSeperated.length) > 1) { //only place bullet points when theres information to display
                                 taskListSeperated.forEach(task => $( ".events" ).append("<br>• " + task + "</br>")) //append each task   
                         } else {
                                 return
                         }
- 
+                        
+
+
+                // $( ".eventsTitle" ).html(""); // clear 
+                // $( ".events" ).html("");  // clear 
+
+                // $( ".deathsTitle" ).html(""); // clear 
+                // $( ".deaths" ).html("");   // clear 
+
+                // $( ".birthsTitle" ).html(""); // clear 
+                // $( ".births" ).html("");// clear 
 
                 }); 
         }
