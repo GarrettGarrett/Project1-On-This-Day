@@ -17,6 +17,10 @@ let apiDate = mm + '/' + dd
 let currentlyVeiwingDateAbbrev;
 let currentlyVeiwingDate = today;
 let currentlyVeiwingDateAPIVersion;
+// let category = "History"
+let category = "GA"
+let topicList = []
+let taskList = []
 
 
 
@@ -46,12 +50,59 @@ dateRightArrow.addEventListener("click", nextDay);
 
 /*----- functions -----*/
 function getApiData (param) {
-        $.ajax(`https://history.muffinlabs.com/date/${param}`)
-    .then(function(data) { 
-        apiInfo = data;
-        render();
-        
-        });
+        if (category === "History") {
+                $.ajax(`https://history.muffinlabs.com/date/${param}`)
+                .then(function(data) { 
+                    apiInfo = data;
+                    render();
+                    
+                    });
+        } else if (category === "GA") {
+                leftArrow.style.visibility = "hidden" //hide nav arrows
+                rightArrow.style.visibility = "hidden"
+                $( ".eventsTitle" ).html(""); // clear 
+                $( ".events" ).html("");  // clear 
+
+                $( ".deathsTitle" ).html(""); // clear 
+                $( ".deaths" ).html("");   // clear 
+
+                $( ".birthsTitle" ).html(""); // clear 
+                $( ".births" ).html("");// clear 
+
+                
+                
+                topicList.length = 0 
+                taskList.length = 0
+
+
+                $.getJSON("ga.json", function(json) {
+                        if (param in json) { //avoid errors when no json data for given date
+                                topicList.push(json[param][0].topic); 
+                                taskList.push(json[param][0].tasks);
+                            } else {
+                                return
+                            }
+
+                        
+                        
+                        let tasksStr = json[param][0].tasks; //string of tasks from JSON
+
+                        let taskListSeperated = tasksStr.split(', '); //convert str comma seperated into an array
+                        
+                        
+
+                        $( ".eventsTitle" ).html(topicList); // update topic
+
+                        if ((taskListSeperated.length) > 1) { //dont place bullet ponts if nothing to display
+                                taskListSeperated.forEach(task => $( ".events" ).append("<br>• " + task + "</br>")) //append each task   
+                        } else {
+                                return
+                        }
+ 
+
+                }); 
+        }
+
 }
 
 
@@ -78,6 +129,10 @@ function render() {
                 // // console.log(deathImgNameList) //returns the name needed for next api call to get image from Wikipedia.
               }
         
+        $( ".eventsTitle" ).html("Events: ");
+        $( ".deathsTitle" ).html("Deaths: "); 
+        $( ".birthsTitle" ).html("Births: "); 
+
         $( ".events" ).html(eventList[listIndex]); 
         $( ".deaths" ).html(deathsList[listIndex]);   
         $( ".births" ).html(birthsList[listIndex]);
@@ -139,7 +194,8 @@ function nextDay () {
         $(".todaysDate").html(currentlyVeiwingDateHTMLVersion)
 
         getApiData(currentlyVeiwingDateAPIVersion);
-        console.log(currentlyVeiwingDateAPIVersion)
+        
+
          
 }
 
@@ -155,13 +211,14 @@ function prevDay () {
         $(".todaysDate").html(currentlyVeiwingDateHTMLVersion)
 
         getApiData(currentlyVeiwingDateAPIVersion);
-        console.log(currentlyVeiwingDateAPIVersion)
+        
          
 }
 
 
 
 getApiData(apiDate);
+
 
 
 

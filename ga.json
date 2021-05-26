@@ -1,0 +1,174 @@
+{
+    
+    "05/27":[
+        {"topic":"Project 1", "tasks":""}
+      ],
+          
+    "05/28":[
+        {"topic":"Project 1", "tasks":""}
+      ],
+    
+    "06/01":[
+      {"topic":"Intro to Full-Stack Development, Express & Node", "tasks":"Lecture: Intro to Full-Stack Development, Lecture: Intro to Node, Lecture: Intro to Express, Lab: Intro to Express Lab - Non-Deliverable"}
+    ],
+    
+    "06/02":[
+        {"topic":"Express Routers and Controllers", "tasks":"Lecture: Intro to Express Routers and Controllers, Lab: Express Dev Skills Part 1 of 2 - Parts 1 and 2 Are Deliverable"}
+      ],
+
+    "06/03":[
+    {"topic":"Intro to Express Routers and Controllers (Cont)", "tasks":"Lecture: Intro to Express Routers and Controllers, Lab: Express Dev Skills Part 1 of 2 - Parts 1 and 2 Are Deliverable"}
+    ],
+    
+    "06/04":[
+        {"topic":"Express Middleware & MongoDB Preview Materials", "tasks":"Lecture: Intro to Express Middleware, Lab: Express Dev Skills Part 2 of 2 - Parts 1 and 2 Are Deliverable, Resource: Intro to MongoDB, Resource: Create a Cloud-Hosted MongoDB"}
+      ],
+          
+    "06/07":[
+        {"topic":"Intro to MongoDB & Mongoose", "tasks":"Lecture: Intro to MongoDB, Resource: Create a Cloud-Hosted MongoDB, Lecture: Intro to Mongoose, Lab: Mongoose Flights Part 1 - Deliverable, Activity: Review Project 2"}
+      ],
+          
+    "06/08":[
+        {"topic":"Mongoose Embedded Relationships", "tasks":"Lecture: Intro to Mongoose Embedded Relationships, Optional Lab: Mongoose Flights Part 2 of 3 - Only Part 1 is a Deliverable"}
+      ],
+          
+    "06/09":[
+        {"topic":"Intro to Mongoose Referenced Relationships", "tasks":"Lecture: Intro to Mongoose Referenced Relationship, Optional Lab: Mongoose Flights Part 3 of 3 - Only Part 1 is a Deliverable"}
+      ],
+          
+    "06/10":[
+        {"topic":"Authentication", "tasks":"Morning Exercise: HTML/CSS Forms, Lecture: Intro to Authentication With Bcrypt & Sessions, Advanced Material Resource: Intro to Authentication With Oauth"}
+      ],
+          
+    "06/11":[
+        {"topic":"Finish Auth Lesson, Optional APIs with Express Workshop & Project 2", "tasks":"Warmup: Beginners Guide to UX, Lecture: Finish Authentication With Bcrypt & Sessions, Optional Workshop: Consuming a 3rd Party API with Express, Resource: Consuming the GitHub API with Express, Activity: Students Plan Project 2"}
+      ],
+          
+    "06/14":[
+        {"topic":"Developer Guides and Project 2", "tasks":"Developer Guide: Deploying a Node/Express App to Heroku, Developer Guide: Setting up a Cloud-Based MongoDB Database with Atlas, Developer Guide: Add a Feature to a Web App, Activity: Project 2"}
+      ],
+          
+    "06/15":[
+        {"topic":"Bonus Lectures & Project 2", "tasks":"Bonus Material: Producing an API with Express, Bonus Lab: Producing an API Lab - Non-Deliverable"}
+      ],
+          
+    "06/16":[
+        {"topic":"Project 2", "tasks":""}
+      ],
+                
+    "06/17":[
+        {"topic":"Project 2", "tasks":""}
+      ],
+          
+    "06/18":[
+        {"topic":"Project Presentations", "tasks":""}
+      ],
+
+    "06/21":[
+        {"topic":"Intro to SPA's and ReactJS", "tasks":"Lecture: Intro to SPA's and ReactJS, Lecture: Intro to JSX, Lab: React Floorplan - Deliverable, Lab: Official React Tutorial Option 2 - Non-Deliverable"}
+      ],
+          
+    "06/22":[
+        {"topic":"Intro to React Components", "tasks":"Lecture: Intro to React Components, Lab: React Components Lab (included at end of components lesson) - Non Deliverable"}
+      ],
+          
+    "06/23":[
+        {"topic":"Intro to State and Props with React", "tasks":"Lecture: Introducing State with Hooks and Props, Lab: React Students Lab - Deliverable"}
+      ],
+          
+    "06/24":[
+        {"topic":"Styling React Components and Event Handling", "tasks":"Lecture: Intro to Styling Components, Lab: Styling Components Lab - Deliverable, Lecture: Intro to Event Handling in React, Lab: React Event Handling Lab - Non-Deliverable"}
+      ],
+          
+    "06/25":[
+        {"topic":"Intro to React with AJAX & React Router", "tasks":"Lecture: Intro to React Router, Lab: React Router Lab, Lecture: React with AJAX, Lab: React Star Wars AJAX Lab - Deliverable, Advanced Exercise Resource: Create a Game Timer for React Mastermind using setInterval& React Hooks"}
+      ],
+          
+    "06/28":[
+        {"topic":"Handling Input In React", "tasks":"Lecture: Handling Input In React w/ Controlled Components, Lecture: Intro to Full-Stack React, Lab: Full-Stack React Lab - Non-Deliverable, Activity: Review Project 3 Requirements"}
+      ],
+          
+    "06/29":[
+        {"topic":"React Take Home Coding Challenge & Auth with Firebase Workshop", "tasks":"Activity: 'Take-Home' Coding Challenge: Movies App - Non-Deliverable, Activity: Review Project 3 Requirements, Workshop: Adding Authentication to React with Google Firebase, Activity: Project 3 Planning and Approvals"}
+      ],
+          
+    "06/30":[
+        {"topic":"Project 3", "tasks":""}
+      ],
+                
+    "07/01":[
+        {"topic":"Project 3", "tasks":""}
+      ],
+                
+    "07/02":[
+        {"topic":"Project 3", "tasks":""}
+      ],
+                
+    "07/05":[
+        {"topic":"Project 3", "tasks":""}
+      ],
+                
+    "07/06":[
+        {"topic":"Project 3", "tasks":""}
+      ],
+                      
+    "07/07":[
+        {"topic":"Project 3", "tasks":""}
+      ],
+                
+    "07/08":[
+        {"topic":"Project 3", "tasks":""}
+      ],
+                      
+    "07/09":[
+        {"topic":"Project 3 Presentations & Prep for Unit 4", "tasks":"Activity: Students Present Project 3, Activity: Install Fest Phase 3, Resource: Ruby Jumpstart, Resource: Ruby Tutorial Playlist 1 by Alex Merced, Resource: Ruby Tutorial Playlist 2 by Alex Merced"}
+      ],
+          
+    "07/12":[
+        {"topic":"Intro to Ruby", "tasks":"Lecture: Intro to Ruby, Lecture: Ruby Blocks, Lab: Ruby vs. JavaScript - Non-Deliverable, Lab: Ruby Basics - Deliverable"}
+      ],
+          
+    "07/13":[
+        {"topic":"Review of Ruby Methods/Enumerables & Intro to Ruby Classes", "tasks":"Activity: Review of Ruby Methods & Enumerables, Lecture: Intro to Ruby Classes & Objects, Lab: Ruby Black Jack - Deliverable, Lecture: Intro to SQL and Relational Databases, Lab: Carmen San Diego Lab - Deliverable, Optional Lab: Ruby Classes (More Practice)"}
+      ],
+          
+    "07/14":[
+        {"topic":"Intro to Rails & Rails Relationships", "tasks":"Lecture: Intro to Rails, Lecture: Rails Relationships, Lab: Rails Relationships Group Lab - Non Deliverable, Lab: Glitch in the Matrix - Deliverable"}
+      ],
+          
+    "07/15":[
+        {"topic":"Rails Controllers and Routes", "tasks":"Lecture: Rails Controllers and Routes I, Lecture: Rails Controllers and Routes II, Lab: Books App - Non Deliverable, Lab: Tweetr - Non Deliverable"}
+      ],
+          
+    "07/16":[
+        {"topic":"Catch Up on Labs & Prepare for Project 4", "tasks":"Morning Warmup: Happy Fun Ball - More Practice with Git, Lab: Ruby Black Jack - Deliverable, Lab: Glitch in the Matrix - Deliverable, Lab: Books App - Non Deliverable, Lab: Tweetr - Non Deliverable, Activity: Review Project 4 Requirements"}
+      ],
+          
+    "07/19":[
+        {"topic":"Rails Scaffold & Create React App", "tasks":"Lecture: Rails Scaffold & Create React App"}
+      ],
+          
+    "07/20":[
+        {"topic":"Project 4", "tasks":""}
+      ],
+                
+    "07/21":[
+        {"topic":"Project 4 & Bonus Rails Material", "tasks":"Bonus Material: Rails One to Many Relationships, Bonus Material: Rails One to Many Relationships (Build React Frontend, Bonus Material: Rails Many to Many Relationships, Bonus Lab: Rails One to Many Lab (1:M Practice), Bonus Lab: Stock Prices Lab (1:M Practice), Bonus Lab: Products and Reviews (1:M Practice), Bonus Lab: Playlists >--< Songs Lab (M:M Practice)"}
+      ],
+          
+    "07/22":[
+        {"topic":"Project 4 & Additional Git Guides", "tasks":"Additional Git Resource: Git Collaboration Guide, Developer Guide: Rails Heroku Deployment"}
+      ],
+          
+    "07/23":[
+        {"topic":"Project 4", "tasks":""}
+      ]
+      
+      
+    
+    
+    }
+
+
+
+
