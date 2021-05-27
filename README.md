@@ -34,6 +34,7 @@
     </li>
     <li><a href="#api">API</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
+     <li><a href="#future-enhancements">Future Enhancements</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -63,7 +64,7 @@ Here is my original wireframe drawn with [InVision](https://www.invisionapp.com/
 
 
 <!-- API -->
-# API
+# Getting Started with the API
 I used the free Muffinabs [API](http://history.muffinlabs.com/#api) for this project.  It uses Wikipedia entries for each day of the year and parses this information into JSON data.
 
 * API Call
@@ -97,6 +98,8 @@ I used the free Muffinabs [API](http://history.muffinlabs.com/#api) for this pro
 ![On This Day in History](imgs/GA.png)
 
 
+# Future Enhancements
+Add images from Wikipedia for each event.
 
 
 
@@ -112,6 +115,6 @@ I used the free Muffinabs [API](http://history.muffinlabs.com/#api) for this pro
 
 
 <!-- CONTACT -->
-## Contact
+# Contact
 Project Link: [https://github.com/GarrettGarrett/Project1-On-This-Day](https://github.com/GarrettGarrett/Project1-On-This-Day)
 
