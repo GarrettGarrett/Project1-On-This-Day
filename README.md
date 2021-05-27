@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/GarrettGarrett/Project1-On-This-Day">
+  <a href="https://garrettgarrett.github.io/Project1-On-This-Day/">
     <img src="https://images.emojiterra.com/twitter/512px/1f5d3.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -42,6 +42,7 @@
 This is my first developer project with General Assembly! Discover the events, deaths, and births that occured today in history.  Each result includes hypperlinks to their corresponding pages on Wikipedia.  There are 2 modes to this app: 
 * This day in History - Displays events, births, and deaths from history.
 * This Day in General Assemlby  - Displays the daily overview for the SEI Immersive class 5/10/21- 8/4/21.
+The finished product can be viewed [here](https://garrettgarrett.github.io/Project1-On-This-Day/)
 
 # Built With
 
