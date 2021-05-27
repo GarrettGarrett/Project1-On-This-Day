@@ -135,7 +135,7 @@ h1 {
     color: black
   }
   #dateDiv h2 {
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 30px;
     transition: all 500ms;
   }
@@ -169,16 +169,18 @@ h1 {
     font-weight: bold;
     color:black 
     
+    
 }
 
 
   
   body {
     
-      background: linear-gradient(-45deg, #01c4ff38, #0026ff0c, #dc00e411, #dae90054);
+      
+      background: linear-gradient(-45deg, #ee765234, #e73c7e3a, #23a5d538, #23d5ab3b);
       background-size: 400% 400%;
       
-      animation: gradient 10s ease infinite;
+      animation: gradient 25s ease infinite;
   }
   
   @keyframes gradient {
