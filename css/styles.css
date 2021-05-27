@@ -1,11 +1,10 @@
 .eventsMain {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-height: 350px;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 30px;
     margin-top: auto;
     
     
@@ -50,16 +49,6 @@
 }
 
 
-#navBoxleft {
-
-    
-    
-}
-
-#navBoxright {
-
-    
-}
 
 
 header {
@@ -67,6 +56,11 @@ header {
     justify-content: center; 
     align-items: center;
     padding-top: 20px;
+    font-family: 'Archivo Black', sans-serif;
+    
+
+   
+    
     
     
 }
@@ -132,12 +126,14 @@ h1 {
 #dateDiv {
     margin-top: 1px;
     margin-bottom: 1px;
-    color: black
+    color: black;
+    
+    
   }
   #dateDiv h2 {
-    /* font-weight: bold; */
     font-size: 30px;
     transition: all 500ms;
+    
   }
   #dateDiv h2:hover {
     font-size: 40px;
@@ -153,7 +149,7 @@ h1 {
     
   }
   #histryDiv .toggle {
-    font-size: 35px;
+    
     transition: all 300ms;
   }
 
@@ -167,7 +163,8 @@ h1 {
   /* This Day in History@@@@@@@@@@@@@@@@@@@@ */
 h1 {
     font-weight: bold;
-    color:black 
+    color:black;
+    
     
     
 }
@@ -175,12 +172,9 @@ h1 {
 
   
   body {
-    
-      
       background: linear-gradient(-45deg, #ee765234, #e73c7e3a, #23a5d538, #23d5ab3b);
       background-size: 400% 400%;
-      
-      animation: gradient 25s ease infinite;
+      animation: gradient 30s ease infinite;
   }
   
   @keyframes gradient {
