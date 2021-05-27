@@ -17,8 +17,6 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -39,14 +37,11 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 # About The Project
-
 This is my first developer project with General Assembly! Discover the events, deaths, and births that occured today in history.  Each result includes hypperlinks to their corresponding pages on Wikipedia.  There are 2 modes to this app: 
 * This day in History - Displays events, births, and deaths from history.
-* This Day in General Assemlby  - Displays the overview for that day in the SEI Immersive class 5/10/21- 8/4/21.
+* This Day in General Assemlby  - Displays the daily overview for the SEI Immersive class 5/10/21- 8/4/21.
 
 # Built With
 
@@ -54,7 +49,6 @@ This is my first developer project with General Assembly! Discover the events, d
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScript](https://www.javascript.com/)
 * [jQuery](https://jquery.com/)
-
 
 # Wireframe
 
@@ -101,9 +95,6 @@ I used the free Muffinabs [API](http://history.muffinlabs.com/#api) for this pro
 # Future Enhancements
 * Add images from Wikipedia for each event.
 * Add a drop down calandar for selecting dates.
-
-
-
 
 <!-- CONTACT -->
 # Contact
