@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/GarrettGarrett/Project1-On-This-Day">
     <img src="https://images.emojiterra.com/twitter/512px/1f5d3.png" alt="Logo" width="80" height="80">
   </a>
 
