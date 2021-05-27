@@ -39,9 +39,9 @@
 
 <!-- ABOUT THE PROJECT -->
 # About The Project
-This is my first developer project with General Assembly! Discover the events, deaths, and births that occured today in history.  Each result includes hypperlinks to their corresponding pages on Wikipedia.  There are 2 modes to this app: 
+This is my first developer project with General Assembly! Discover the events, deaths, and births that occurred today in history.  Each result includes hyperlinks to their corresponding pages on Wikipedia.  There are 2 modes to this app: 
 * This day in History - Displays events, births, and deaths from history.
-* This Day in General Assemlby  - Displays the daily overview for the SEI Immersive class 5/10/21- 8/4/21.
+* This Day in General Assembly - Displays the daily overview for the SEI Immersive class 5/10/21- 8/4/21.
 The finished product can be viewed [here](https://garrettgarrett.github.io/Project1-On-This-Day/)
 
 # Built With
@@ -60,7 +60,7 @@ Here is my original wireframe drawn with [InVision](https://www.invisionapp.com/
 
 <!-- API -->
 # Getting Started with the API
-I used the free Muffinabs [API](http://history.muffinlabs.com/#api) for this project.  It uses Wikipedia entries for each day of the year and parses this information into JSON data.
+I used the free Muffinlabs [API](http://history.muffinlabs.com/#api) for this project.  It uses Wikipedia entries for each day of the year and parses this information into JSON data.
 
 * API Call
   ```
@@ -89,13 +89,13 @@ I used the free Muffinabs [API](http://history.muffinlabs.com/#api) for this pro
 ### This day in History:
 ![On This Day in History](imgs/History.png)
 
-### This Day in General Assemlby:
+### This Day in General Assembly:
 ![On This Day in History](imgs/GA.png)
 
 
 # Future Enhancements
 * Add images from Wikipedia for each event.
-* Add a drop down calandar for selecting dates.
+* Add a drop-down calendar for selecting dates.
 
 <!-- CONTACT -->
 # Contact
