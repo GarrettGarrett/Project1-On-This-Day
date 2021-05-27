@@ -1,4 +1,49 @@
 {
+  "05/27":[
+    {"topic":"template", "tasks":"template"}
+  ],
+    
+  "05/10":[
+    {"topic":"Expectations, Classroom Culture, the Dev Environment, and Git/Github", "tasks":"Lecture: Classroom Culture, Lecture: Success Tips, Activity: 'Install-Fest' Phase One, Lecture: Tips and Tricks AKA How This Course Works and How to Succeed (we'll go over ~5 at a time), Lecture: Introduction to the Dev Environment, Lecture: Intro to Git/Github, Lab: Exploring Markdown - Non-Deliverable, Lab: Git/Github and the Terminal Lab - Non-Deliverable"}
+  ],
+  "05/11":[
+    {"topic":"Intro to JavaScript", "tasks":"Lecture: Intro to JavaScript, Lecture: Intro to JavaScript Control Flow, Lecture: JavaScript Arrays, Lab: JavaScript Arrays Lab - Non-Deliverable"}
+  ],
+  "05/12":[
+    {"topic":"JavaScript Functions & Scope", "tasks":"Lecture: JavaScript Arrays, Lab: JavaScript Arrays Lab - Deliverable, Lecture: JavaScript Functions and Scope, Lab: JavaScript Functions Lab - Non-Deliverable"}
+  ],
+  "05/13":[
+    {"topic":"Intro to JS Objects and Classes", "tasks":"Warmup: Setting up for Success, Lecture: Intro to JavaScript Objects, Lecture: Intro to JavaScript Classes, Lab: Guess the Number Game Lab - Deliverable, Lab: JavaScript Classes Lab - Non-Deliverable"}
+  ],
+  "05/14":[
+    {"topic":"Intro the DOM", "tasks":"Warmup: The HTML5 Boilerplate, Lecture: Wrap up JS Classes, Lecture: Intro to the DOM, Lecture: Intro to DOM Events, Lab: DOM Menu Lab - Part 1 of 2 - Deliverable, Lab: DOM Menu Lab Part 2 of 2 - Non-Deliverable, Resource: Guide to Building a Browser Game, Optional Challenge: Tic Tac Toe"}
+  ],
+  "05/17":[
+    {"topic":"Intro to CSS Flexbox/Grid & Responsive Design", "tasks":"Lecture: Intro to CSS Flexbox and Grid, Lecture: Intro to Responsive Design, Lab: CSS Flexbox and Grid Lab - Deliverable, Activity Review Project 1 Requirements, Activity Begin Planning Project 1"}
+  ],
+  "05/18":[
+    {"topic":"Intro to DOM Manipulation With jQuery", "tasks":"Warmup: Flexbox Practice, Lecture: Intro To jQuery Part 1, Lecture Array Iterators Walkthrough, Lab: Array Iterators Lab - Non-Deliverable"}
+  ],
+  "05/19":[
+    {"topic":"DOM Manipulation with jQuery Part 2", "tasks":"Warmup Wireframing, Lecture: Intro To jQuery Part 2, Lab: My Developer Skills Lab - Deliverable, Lecture: JavaScript Callbacks and Arrow Functions, Activity: Project 1 Planning"}
+  ],
+  "05/20":[
+    {"topic":"Intro to AJAX and JavaScript Promises", "tasks":"Warmup: Wireframing Part 2, Lecture: Intro to AJAX and JavaScript Promises with jQuery, Lab: Build a Weather App With AJAX - Deliverable"}
+  ],
+  "05/21":[
+    {"topic":"Build Another Project That Uses AJAX", "tasks":"Activity: Build Another Project That Uses AJAX"}
+  ],
+
+
+
+
+
+
+
+
+
+
+
     
     "05/27":[
         {"topic":"Project 1", "tasks":""}
