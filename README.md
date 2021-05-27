@@ -32,7 +32,7 @@
     <li>
       <a href="#wireframe">Wireframe</a>
     </li>
-    <li><a href="#api">API</a></li>
+    <li><a href="#getting-started-with-the-api">Getting Started with the API</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
      <li><a href="#future-enhancements">Future Enhancements</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -99,17 +99,8 @@ I used the free Muffinabs [API](http://history.muffinlabs.com/#api) for this pro
 
 
 # Future Enhancements
-Add images from Wikipedia for each event.
-
-
-
-
-
-
-
-
-
-
+* Add images from Wikipedia for each event.
+* Add a drop down calandar for selecting dates.
 
 
 
