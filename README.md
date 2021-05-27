@@ -40,9 +40,11 @@
 <!-- ABOUT THE PROJECT -->
 # About The Project
 This is my first developer project with General Assembly! Discover the events, deaths, and births that occurred today in history.  Each result includes hyperlinks to their corresponding pages on Wikipedia.  There are 2 modes to this app: 
+
 * This day in History - Displays events, births, and deaths from history.
 * This Day in General Assembly - Displays the daily overview for the SEI Immersive class 5/10/21- 8/4/21.
-The finished product can be viewed [here](https://garrettgarrett.github.io/Project1-On-This-Day/)
+
+The current version of this app can be viewed [here](https://garrettgarrett.github.io/Project1-On-This-Day/)
 
 # Built With
 
