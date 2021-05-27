@@ -46,7 +46,8 @@ header {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    font-family: 'Archivo Black', sans-serif;
+    /* font-family: 'Archivo Black', sans-serif; */
+    font-family: 'Suez One', serif;
 }
 
 .todaysDate {
