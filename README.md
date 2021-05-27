@@ -44,7 +44,7 @@ This is my first developer project with General Assembly! Discover the events, d
 * This day in History - Displays events, births, and deaths from history.
 * This Day in General Assembly - Displays the daily overview for the SEI Immersive class 5/10/21- 8/4/21.
 
-The current version of this app can be viewed [here](https://garrettgarrett.github.io/Project1-On-This-Day/)
+The current version of this app can be viewed [here.](https://garrettgarrett.github.io/Project1-On-This-Day/)
 
 # Built With
 

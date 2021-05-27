@@ -1,134 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
+
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f9d370b433.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗓</text></svg>">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f9d370b433.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗓</text></svg>">
 
 
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script defer src="./js/script.js"></script>
-    
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script defer src="./js/script.js"></script>
 
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <title></title>
 
 </head>
 
-<body >
-    
-    <div class="container" >
+<body>
+
+  <div class="container">
     <header id='histryDiv'>
-        <h1 class='page-header'>This Day in</h1>
-        <h1 class='toggle' id='toggle'> History</h1>
+      <h1 class='page-header'>This Day in</h1>
+      <h1 class='toggle' id='toggle'> History</h1>
     </header>
-    
+
 
     <div class="dateMain">
-        <div id='dateNavBoxLeft'>
-        <button id='dateLeft' type="button" class="btn btn-light btn-grad-date"><span class='date arrow left'><i class="fas fa-chevron-left"></i></span></button>
-        </div>  
+      <div id='dateNavBoxLeft'>
+        <button id='dateLeft' type="button" class="btn btn-light btn-grad-date"><span class='date arrow left'><i
+              class="fas fa-chevron-left"></i></span></button>
+      </div>
 
-        <div id='dateDiv'>
-            <h2 id='dateToggle' class='todaysDate'></h2>
-        </div>
+      <div id='dateDiv'>
+        <h2 id='dateToggle' class='todaysDate'></h2>
+      </div>
 
-        <div id='dateNavBoxright'>
-        <button id='dateRight' type="button" class="btn btn-light btn-grad-date"><span class='date arrow right'><i class="fas fa-chevron-right"></i></span></button>
-        </div>   
- 
+      <div id='dateNavBoxright'>
+        <button id='dateRight' type="button" class="btn btn-light btn-grad-date"><span class='date arrow right'><i
+              class="fas fa-chevron-right"></i></span></button>
+      </div>
+
     </div>
 
-<hr>
+    <hr>
 
 
     <main class='eventsMain'>
-        <div id='navBoxleft'>
-            <button id='left' type="button" class="btn btn-primary  btn-grad"><span class='arrow left'><i class="fas fa-chevron-left"></i></span></button>
-        </div>
-        <div class='content'>
-            
-            <!-- <h3 class='eventsTitle'>Events: </h3>
-            <div class="events" id='p1'></div>
+      <div id='navBoxleft'>
+        <button id='left' type="button" class="btn btn-primary  btn-grad"><span class='arrow left'><i
+              class="fas fa-chevron-left"></i></span></button>
+      </div>
+      <div class='content'>
 
-            <h3 class='deathsTitle'>Deaths: </h3>
-            <div class="deaths" id='p2'></div>
-
-            <h3 class='birthsTitle'>Births: </h3>
-            <div class="births" id='p3'></div> -->
-
-            <div class="card w-responsive text-center mx-auto p-3 mt-2 shadow-lg p-3 mb-5 bg-white rounded" id='eventsCard'>
-                <div class="card-body">
-                  <h5 class='eventsTitle'></h5>
-                  <p class="events"></p>
-                </div>
-              </div>
-
-              <div class="card w-responsive text-center mx-auto p-3 mt-2 shadow-lg p-3 mb-5 bg-white rounded" id='deathsCard'>
-                <div class="card-body">
-                  <h5 class='deathsTitle'></h5>
-                  <p class="deaths"></p>
-                </div>
-              </div>
-
-              <div class="card w-responsive text-center mx-auto p-3 mt-2 shadow-lg p-3 mb-5 bg-white rounded" id='birthsCard'>
-                <div class="card-body">
-                  <h5 class='birthsTitle'></h5>
-                  <p class="births"></p>
-                </div>
-              </div>
-
-        </div>      
-
-
-
-        <div id='navBoxright'></div>
-        <button id='right' type="button" class="btn btn-primary btn-grad"><span class='arrow right'><i class="fas fa-chevron-right"></i></span></button>
+        <div class="card w-responsive text-center mx-auto p-3 mt-2 shadow-lg p-3 mb-5 bg-white rounded" id='eventsCard'>
+          <div class="card-body">
+            <h5 class='eventsTitle'></h5>
+            <p class="events"></p>
+          </div>
         </div>
 
-    
-    </main>
-
-    
-    <footer >
-        <!-- Copyright -->
-        <div id='copyright' class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-          
-          <a class="text-dark" href="https://mdbootstrap.com/"></a>
+        <div class="card w-responsive text-center mx-auto p-3 mt-2 shadow-lg p-3 mb-5 bg-white rounded" id='deathsCard'>
+          <div class="card-body">
+            <h5 class='deathsTitle'></h5>
+            <p class="deaths"></p>
+          </div>
         </div>
-        <!-- Copyright -->
-      </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-</div>
+        <div class="card w-responsive text-center mx-auto p-3 mt-2 shadow-lg p-3 mb-5 bg-white rounded" id='birthsCard'>
+          <div class="card-body">
+            <h5 class='birthsTitle'></h5>
+            <p class="births"></p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div id='navBoxright'></div>
+      <button id='right' type="button" class="btn btn-primary btn-grad"><span class='arrow right'><i
+            class="fas fa-chevron-right"></i></span></button>
+  </div>
+
+
+  </main>
+
+
+  <footer>
+    <!-- Copyright -->
+    <div id='copyright' class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+
+      <a class="text-dark" href="https://mdbootstrap.com/"></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+  </div>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
